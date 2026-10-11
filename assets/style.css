@@ -271,3 +271,8 @@ section.canal{background:#FFD200 !important;color:#111 !important}
 section.canal .canal-txt h2,section.canal .canal-txt p,section.canal .canal-qr figcaption{color:#111 !important}
 section.apoiadores{background:#fff !important}
 .sponsors li{background:transparent !important;border:0 !important;padding:6px !important}
+
+/* v12: logo circular Parkour Nacional */
+section.nac .nac-logo{width:110px;height:110px;flex:0 0 110px;border-radius:50%;display:block}
+section.nac h2{flex:1 1 auto}
+@media (max-width:640px){section.nac .nac-logo{width:90px;height:90px;flex-basis:90px}}
