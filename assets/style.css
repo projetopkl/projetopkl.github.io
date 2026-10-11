@@ -276,3 +276,7 @@ section.apoiadores{background:#fff !important}
 section.nac .nac-logo{width:110px;height:110px;flex:0 0 110px;border-radius:50%;display:block}
 section.nac h2{flex:1 1 auto}
 @media (max-width:640px){section.nac .nac-logo{width:90px;height:90px;flex-basis:90px}}
+/* v13: frase nac em uma linha */
+section.nac .wrap{max-width:1100px !important}
+section.nac h2{white-space:nowrap;font-size:clamp(16px,1.9vw,22px) !important}
+@media (max-width:900px){section.nac h2{white-space:normal}}
