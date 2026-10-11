@@ -260,3 +260,14 @@ section.canal .canal-qr figcaption{color:#FFD200;text-align:center}
 .sponsors li{background:#fff;display:flex;align-items:center;justify-content:center;padding:14px;min-height:110px}
 .sponsors li img{max-width:100%;max-height:90px;width:auto;height:auto;object-fit:contain}
 .sponsors li{border:1px solid #e3e3e3 !important;border-radius:12px}
+
+/* v11: ajustes finais */
+.car{max-width:720px !important}.car-view{aspect-ratio:16/10}
+section.nac .wrap{display:flex !important;flex-direction:row !important;align-items:center;justify-content:space-between;gap:20px;max-width:900px;margin:0 auto;flex-wrap:nowrap}
+section.nac h2{font-size:clamp(18px,2.2vw,24px) !important;margin:0 !important}
+section.nac .btn{flex:0 0 auto;white-space:nowrap}
+@media (max-width:640px){section.nac .wrap{flex-direction:column !important;text-align:center}}
+section.canal{background:#FFD200 !important;color:#111 !important}
+section.canal .canal-txt h2,section.canal .canal-txt p,section.canal .canal-qr figcaption{color:#111 !important}
+section.apoiadores{background:#fff !important}
+.sponsors li{background:transparent !important;border:0 !important;padding:6px !important}
