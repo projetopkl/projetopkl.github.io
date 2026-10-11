@@ -241,20 +241,6 @@ section.canal .canal-txt h2,section.canal .canal-txt p{color:#FFD200 !important;
 section.canal .canal-qr{flex:0 0 200px;width:200px;margin:0;text-align:center}
 section.canal .canal-qr figcaption{color:#FFD200;text-align:center}
 @media (max-width:640px){section.canal .wrap.canal-grid{flex-direction:column !important;gap:18px}section.canal .canal-txt,section.canal .canal-txt h2,section.canal .canal-txt p{text-align:center !important}}
-/* v9: carrossel galeria */
-.car{position:relative;max-width:960px;margin:24px auto 0;border-radius:14px;overflow:hidden;background:#111}
-.car-view{overflow:hidden;aspect-ratio:4/3}
-.car-track{display:flex;list-style:none;margin:0;padding:0;height:100%;transition:transform .6s ease}
-.car-slide{flex:0 0 100%;height:100%}
-.car-slide img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
-.car-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:20px;cursor:pointer;z-index:2}
-.car-btn:hover,.car-btn:focus-visible{background:#FFD200;color:#000;outline:none}
-.car-prev{left:10px}.car-next{right:10px}
-.car-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;flex-wrap:wrap;gap:6px;padding:0 50px}
-.car-dots button{width:10px;height:10px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}
-.car-dots button[aria-current="true"]{background:#FFD200;transform:scale(1.3)}
-@media (prefers-reduced-motion:reduce){.car-track{transition:none}}
-@media (max-width:640px){.car-btn{width:36px;height:36px;font-size:16px}.car-dots button{width:8px;height:8px}}
 
 /* v10: logos apoiadores */
 .sponsors li{background:#fff;display:flex;align-items:center;justify-content:center;padding:14px;min-height:110px}
@@ -262,7 +248,7 @@ section.canal .canal-qr figcaption{color:#FFD200;text-align:center}
 .sponsors li{border:1px solid #e3e3e3 !important;border-radius:12px}
 
 /* v11: ajustes finais */
-.car{max-width:720px !important}.car-view{aspect-ratio:16/10}
+
 section.nac .wrap{display:flex !important;flex-direction:row !important;align-items:center;justify-content:space-between;gap:20px;max-width:900px;margin:0 auto;flex-wrap:nowrap}
 section.nac h2{font-size:clamp(18px,2.2vw,24px) !important;margin:0 !important}
 section.nac .btn{flex:0 0 auto;white-space:nowrap}
@@ -280,3 +266,16 @@ section.nac h2{flex:1 1 auto}
 section.nac .wrap{max-width:1100px !important}
 section.nac h2{white-space:nowrap;font-size:clamp(16px,1.9vw,22px) !important}
 @media (max-width:900px){section.nac h2{white-space:normal}}
+
+/* v14: galeria full-bleed (faixa contínua) */
+.galeria{padding-bottom:0}
+.strip{width:100%;overflow:hidden;margin-top:24px;background:#111}
+.strip-track{display:flex;width:max-content;animation:strip 120s linear infinite}
+.strip:hover .strip-track,.strip:focus-within .strip-track{animation-play-state:paused}
+.strip-set{display:flex;list-style:none;margin:0;padding:0;gap:4px;padding-right:4px}
+.strip-set li{flex:0 0 calc((100vw - 16px)/4);height:320px}
+.strip-set img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+@keyframes strip{to{transform:translateX(-50%)}}
+@media(max-width:999px){.strip-set li{flex-basis:calc((100vw - 4px)/2);height:280px}}
+@media(max-width:640px){.strip-set li{flex-basis:70vw;height:240px}}
+@media(prefers-reduced-motion:reduce){.strip{overflow-x:auto}.strip-track{animation:none}.strip-set[aria-hidden]{display:none}}
