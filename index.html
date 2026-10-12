@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=14">
+<link rel="stylesheet" href="assets/style.css?v=15">
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -44,11 +44,18 @@
 <section class="hero">
  <img class="hero-photo" src="assets/foto-principal.jpg" alt="Montagem de fotos dos treinos do Projeto Parkour do Litoral, com a turma sentada em roda no Parque da Cidade" width="2400" height="407">
  <div class="wrap hero-box">
-  <h1>Parkour é <span>para todos</span></h1>
-  <p>Projeto social em Praia Grande desde 2013</p>
-  <p><b>Aulas gratuitas todos os domingos</b></p>
-  <div class="btns"><a class="btn btn-o" href="como-participar.html">Quero participar →</a></div>
-  <p class="small">Treinos aos domingos, 9h às 11h · Parque da Cidade (Tude Bastos)</p>
+  <div class="hero-txt">
+   <h1>Parkour é <span>para todos</span></h1>
+   <p class="hero-sub">Projeto social em Praia Grande desde 2013</p>
+   <p class="hero-free"><b>Aulas gratuitas todos os domingos</b></p>
+   <div class="btns"><a class="btn btn-o" href="como-participar.html">Quero participar →</a></div>
+  </div>
+  <aside class="hero-card" aria-label="Informações do treino">
+   <div class="hc-row"><span class="hc-ic" aria-hidden="true">🕘</span><div><small>Quando</small>Domingos, 9h às 11h</div></div>
+   <div class="hc-row"><span class="hc-ic" aria-hidden="true">📍</span><div><small>Onde</small>Parque da Cidade (Tude Bastos)</div></div>
+   <div class="hc-row"><span class="hc-ic" aria-hidden="true">🏙️</span><div><small>Cidade</small>Praia Grande-SP</div></div>
+   <a class="hc-map" href="#mapa">Ver no mapa →</a>
+  </aside>
  </div></section>
 <section class="sobre"><div class="wrap grid2"><div>
   <span class="tag">Sobre</span><h2>Movimento que transforma</h2>
@@ -107,7 +114,7 @@
   <figcaption>Escaneie o QR code ou clique<br>nele para ir direto ao canal</figcaption>
  </figure>
 </div></section>
-<section class="onde"><div class="wrap grid2"><div><span class="tag">Onde e quando</span><h2>Te esperamos no <span style="color:var(--y)">domingo</span></h2><p style="color:#ccc;font-size:18px">Treinos ao ar livre, todo domingo de manhã.</p></div>
+<section class="onde" id="mapa"><div class="wrap grid2"><div><span class="tag">Onde e quando</span><h2>Te esperamos no <span style="color:var(--y)">domingo</span></h2><p style="color:#ccc;font-size:18px">Treinos ao ar livre, todo domingo de manhã.</p></div>
  <!-- MAPA: Google Maps embed (sem API key) -->
  <div class="map-box">
   <iframe src="https://www.google.com/maps?q=Parque+da+Cidade+Tude+Bastos+Praia+Grande+SP&amp;output=embed" title="Mapa: Parque da Cidade (Tude Bastos), Praia Grande-SP" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
