@@ -301,3 +301,5 @@ section.nac h2{white-space:nowrap;font-size:clamp(16px,1.9vw,22px) !important}
 /* v17: oito apoiadores, duas linhas de quatro */
 @media(max-width:759px){.sponsors{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px 14px;max-width:420px;margin-left:auto;margin-right:auto}.sponsors li img{max-height:78px}}
 @media(min-width:760px){.sponsors{grid-template-columns:repeat(4,minmax(0,200px)) !important;justify-content:center;gap:12px 28px;max-width:920px;margin-left:auto;margin-right:auto}.sponsors li{min-height:104px}.sponsors li img{max-height:96px}}
+/* v18: descrições dos cartões pretos. .light p (#222) tem a mesma especificidade que .pill p e vinha depois, então o texto ficava escuro no preto. */
+.pill p{color:#d0d0d0}
