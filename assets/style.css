@@ -303,3 +303,32 @@ section.nac h2{white-space:nowrap;font-size:clamp(16px,1.9vw,22px) !important}
 @media(min-width:760px){.sponsors{grid-template-columns:repeat(4,minmax(0,200px)) !important;justify-content:center;gap:12px 28px;max-width:920px;margin-left:auto;margin-right:auto}.sponsors li{min-height:104px}.sponsors li img{max-height:96px}}
 /* v18: descrições dos cartões pretos. .light p (#222) tem a mesma especificidade que .pill p e vinha depois, então o texto ficava escuro no preto. */
 .pill p{color:#d0d0d0}
+
+/* v19: depoimentos */
+.depo{background:#fff;color:var(--k);scroll-margin-top:16px}
+.depo-hit{display:block;color:inherit;text-decoration:none;cursor:pointer}
+.depo-hit:hover .depo-card{transform:translateY(-3px)}
+.depo-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,78%);gap:14px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 2px 12px;text-align:left}
+.depo-card{scroll-snap-align:start;background:var(--k);color:#fff;border-top:5px solid var(--y);padding:18px 16px 16px;min-width:0;text-align:left}
+button.depo-card{width:100%;font:inherit;border-left:0;border-right:0;border-bottom:0;cursor:pointer}
+.depo-card:hover{transform:translateY(-3px)}
+.depo-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block;border:2px solid var(--y)}
+.depo-card h3{color:#fff;font-size:18px;margin:12px 0 8px}
+.depo-excerpt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+.depo-card .depo-excerpt p{display:inline;color:#d0d0d0;font-size:14px;line-height:1.45;max-width:none;margin:0}
+.depo-card .depo-excerpt p+p::before{content:" "}
+.depo-more{display:inline-block;margin-top:12px;color:var(--y);font-weight:700;font-size:14px}
+.depo-cta{margin-top:22px}
+.depo-hit:focus-visible{outline:3px solid var(--k);outline-offset:4px}
+.depo-card:focus-visible,.depo-close:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+@media(min-width:1100px){
+ .depo-row{grid-auto-columns:minmax(0,1fr);overflow-x:visible;scroll-snap-type:none}
+}
+.depo-modal{position:fixed;inset:0;z-index:80;display:grid;place-items:center;background:rgba(0,0,0,.72);padding:20px}
+.depo-modal[hidden]{display:none}
+.depo-dialog{position:relative;width:min(640px,100%);max-height:min(86vh,760px);overflow:auto;background:var(--k);color:#fff;border-top:5px solid var(--y);padding:28px 24px 24px}
+.depo-close{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:transparent;color:#fff;font-size:32px;line-height:1;cursor:pointer}
+.depo-photo-lg{width:104px;height:104px}
+.depo-dialog h2{color:#fff;font-size:clamp(26px,4vw,34px);margin:14px 48px 16px 0}
+.depo-body p{display:block;color:#e6e6e6;font-size:17px;line-height:1.6;max-width:none;margin:0 0 14px}
+body.depo-open{overflow:hidden}
