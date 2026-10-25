@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patrocínio — Desafio X</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="description" content="Patrocine o Desafio X: cotas para marcas, produtos e serviços de esporte, saúde e bem-estar.">
+<meta property="og:title" content="Patrocínio — Desafio X"><meta property="og:image" content="assets/clube-desafio-x.webp">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=98">
+<style>
+.pc-lead{font-size:1.15rem;max-width:680px;margin:0 auto 1.5rem;color:#ddd}
+.pc-tags{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin:1.5rem auto 0;max-width:860px;list-style:none;padding:0}@media(max-width:700px){.pc-tags{grid-template-columns:repeat(2,1fr)}}
+.pc-tags li{font:400 1.05rem/1 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;justify-content:center;text-align:center;height:3.6rem;padding:0 .5rem;border:2px solid var(--o);color:var(--o)}
+.pc-tags li:nth-child(even){border-color:var(--g);color:var(--g)}
+.features .card p{color:#ddd}
+.blk .features .card{background:#000;border:0;border-left:8px solid var(--o)}
+.blk .features .card h3{color:var(--o)}.blk .features .card p{color:#fff}
+
+.pc-box{max-width:760px;margin:0 auto;border:3px solid var(--g);background:#0d0d0d;padding:1.8rem 1.6rem;font-size:1.12rem;text-align:left}
+.pc-box p+p{margin-top:.8rem}
+.pc-contato{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+.btn.alt{background:#000;color:var(--g);outline-color:var(--g);border-color:var(--g)}
+.btn.alt:hover{background:var(--g);color:#000}
+.pc-mail{margin-top:1rem;color:#ccc}
+@font-face{font-family:"Sacramento";src:url(assets/fonts/sacramento.woff2?v=98) format("woff2");font-display:swap}
+.pc-promo{display:inline-block;font:400 clamp(2.1rem,4.6vw,3.3rem)/1.2 Sacramento,cursive;text-transform:none;letter-spacing:.01em;color:#39ff14;text-shadow:0 0 4px #39ff14,0 0 12px rgba(57,255,20,.75),0 0 28px rgba(57,255,20,.45);padding:.7rem 1.2rem;margin-top:.4rem;max-width:760px}
+/* item 97: "50%" como lâmpada neon pifando (ciclo 12s) */
+.neo50{position:relative;display:inline-block;color:#1f4a1a;text-shadow:none}
+.neo50::after{content:attr(data-t);position:absolute;inset:0;color:#39ff14;text-shadow:0 0 4px #39ff14,0 0 14px #39ff14,0 0 32px rgba(57,255,20,.7);animation:pifa 12s steps(1,end) infinite}
+@keyframes pifa{0%{opacity:1}1%{opacity:0}2%{opacity:1}3.2%{opacity:0}4%{opacity:.6}4.8%{opacity:0}
+21%{opacity:1}
+50%{opacity:0}50.8%{opacity:1}51.6%{opacity:0}52.4%{opacity:1}
+72%{opacity:0}72.6%{opacity:1}73.4%{opacity:.4}74%{opacity:1}
+93%{opacity:0}93.8%{opacity:1}94.6%{opacity:0}95.4%{opacity:.5}96.2%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.neo50::after{animation:none;opacity:1}}
+.ct-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;max-width:1320px;margin:0 auto;text-align:left}
+@media(max-width:1100px){.ct-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.ct-grid{grid-template-columns:1fr}}
+.ct{background:#0d0d0d;border:3px solid var(--c);padding:1.7rem 1.4rem;min-height:100%;display:flex;flex-direction:column}
+.ct.ouro{--c:#e8b923;--c2:#fff3b0;--t:#f3dc8a;background:linear-gradient(160deg,#2a2208,#0d0d0d 60%)}
+.ct.prata{--c:#c9cdd2;--c2:#ffffff;--t:#e3e6ea;background:linear-gradient(160deg,#25272a,#0d0d0d 60%)}
+.ct.bronze{--c:#cd7f32;--c2:#ffd2a6;--t:#e9b98a;background:linear-gradient(160deg,#2a1a0c,#0d0d0d 60%)}
+.ct.ponto{--c:#fff;--c2:#fff;--t:#fff;border-width:2px;background:#0d0d0d}
+.ct h3{font:400 1.7rem/1 Anton,Impact,sans-serif;color:var(--c);text-transform:uppercase;letter-spacing:.04em}
+.ct .de{margin-top:.8rem;color:var(--t);opacity:.75;text-decoration:line-through}
+.ct .por{font:400 2.2rem/1 Anton,Impact,sans-serif;color:var(--c);margin:.2rem 0}
+.ct:not(.ponto) .por{background:linear-gradient(110deg,var(--c) 0%,var(--c) 40%,var(--c2) 50%,var(--c) 60%,var(--c) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brilho 3.2s linear infinite}
+@keyframes brilho{0%{background-position:100% 0}100%{background-position:-150% 0}}
+@media (prefers-reduced-motion:reduce){.ct:not(.ponto) .por{animation:none;background-position:50% 0}}
+.ct .tag{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--c);font-weight:800}
+.ct .val{font-size:.9rem;color:var(--t);margin:.4rem 0 .6rem}
+.ct h4{margin-top:.9rem;font-size:.95rem;text-transform:uppercase;color:var(--c)}
+.ct ul{margin:.4rem 0 0 1.1rem;font-size:1rem;color:var(--t)}.ct li+li{margin-top:.35rem}.ct li::marker{color:var(--c)}
+.ct .lista{flex:1}
+.ct .btn.cota{margin:1.4rem 0 0;width:100%;text-align:center;font-size:1.05rem;padding:.8rem .6rem;white-space:nowrap;background:var(--c);color:#000;outline-color:var(--c)}
+.ct-nota{max-width:900px;margin:1.6rem auto 0;color:#ccc;font-size:.95rem}
+.ct-adendo{max-width:900px;margin:1.2rem auto 0;color:#aaa;font-size:.9rem;font-style:italic;border-top:1px solid #333;padding-top:1rem}
+#aparece .ap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:960px;margin:0 auto;text-align:left}
+@media(max-width:700px){#aparece .ap-grid{grid-template-columns:1fr}}
+#aparece .ap-grid .card{margin:0}
+
+.blk .ap-dest{max-width:960px;margin:1.4rem auto 0;background:#000;color:#fff!important;font:400 clamp(1.1rem,2.2vw,1.5rem)/1.25 Anton,Impact,sans-serif;text-transform:uppercase;padding:1rem 1.2rem;border:3px solid #000}
+#desafios .card{background:#ffa400;border:3px solid #000;outline:3px solid #ffa400}#desafios .card h3{color:#000}#desafios .card p{color:#000;font-weight:600}
+.ct{box-shadow:0 0 10px color-mix(in srgb,var(--c) 40%,transparent);transition:box-shadow .35s,opacity .6s ease,translate .6s cubic-bezier(.2,.8,.2,1)}
+.ct:hover,.ct:focus-within{box-shadow:0 0 22px color-mix(in srgb,var(--c) 75%,transparent),0 0 46px color-mix(in srgb,var(--c) 35%,transparent)}
+.cdx{margin:1.4rem auto 0;text-align:center}
+.cdx-tit{font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;color:#ff8a00;margin:0 0 .9rem}
+.cdx-row{display:flex;align-items:flex-end;justify-content:center;gap:1.4rem;flex-wrap:wrap}
+.cdx-sm{display:flex;gap:.8rem}
+.cdx-u{display:flex;flex-direction:column;align-items:center;gap:.35rem}
+.cdx-u span{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#bbb}
+.cdx-d span{font-size:1rem;color:#39ff14;text-shadow:0 0 8px rgba(57,255,20,.6)}
+.cdx-pl{display:flex;gap:.3rem}
+.fl{position:relative;width:2.4rem;height:2.4rem;perspective:300px;font:700 1.7rem/2.4rem "Courier New",monospace;color:#39ff14;text-shadow:0 0 4px #39ff14,0 0 12px rgba(57,255,20,.8)}
+.cdx-d .fl{width:5rem;height:5rem;font-size:3.8rem;line-height:5rem}
+.fl>div{position:absolute;left:0;right:0;height:50%;overflow:hidden;background:linear-gradient(#1d1d1d,#151515);border-radius:6px 6px 0 0;box-shadow:inset 0 0 0 1px rgba(57,255,20,.18)}
+.fl .t,.fl .ft{top:0}
+.fl .b,.fl .fb{bottom:0;border-radius:0 0 6px 6px;background:linear-gradient(#131313,#0d0d0d)}
+.fl .b>i,.fl .fb>i{display:block;margin-top:-50%;}
+.cdx-d .fl .b>i,.cdx-d .fl .fb>i{margin-top:-2.5rem}
+.fl .b>i,.fl .fb>i{margin-top:-1.2rem}
+.cdx-d .fl .b>i,.cdx-d .fl .fb>i{margin-top:-2.5rem}
+.fl i{font-style:normal;display:block;text-align:center}
+.fl::after{content:"";position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:#060606;z-index:5}
+.fl{box-shadow:0 0 14px rgba(57,255,20,.25);border-radius:6px}
+.fl .ft{transform-origin:bottom;z-index:3;backface-visibility:hidden}
+.fl .fb{transform-origin:top;z-index:3;transform:rotateX(90deg)}
+.fl.go .ft{animation:fT .3s ease-in forwards}
+.fl.go .fb{animation:fB .3s .3s ease-out forwards}
+@keyframes fT{to{transform:rotateX(-90deg)}}
+@keyframes fB{to{transform:rotateX(0)}}
+.cdx-end{font:700 2.4rem/1.2 "Courier New",monospace;color:#39ff14;text-shadow:0 0 6px #39ff14,0 0 18px rgba(57,255,20,.7);margin:.5rem 0 0}
+@media (max-width:560px){.cdx-row{gap:.9rem}.cdx-d .fl{width:3.8rem;height:3.8rem;font-size:2.9rem;line-height:3.8rem}.cdx-d .fl .b>i,.cdx-d .fl .fb>i{margin-top:-1.9rem}.fl{width:2rem;height:2rem;font-size:1.4rem;line-height:2rem}.fl .b>i,.fl .fb>i{margin-top:-1rem}}
+@media (prefers-reduced-motion:reduce){.fl.go .ft,.fl.go .fb{animation:none}}
+.pc-promo{font:400 clamp(1.3rem,5.4vw,2.1rem)/1.3 Anton,Impact,sans-serif;color:#39ff14;text-shadow:0 0 4px rgba(57,255,20,.7),0 0 14px rgba(57,255,20,.4);white-space:nowrap;letter-spacing:.02em;padding:.5rem 1rem}
+.pc-promo .neo50{font:400 1.75em/1 Sacramento,cursive;vertical-align:-.12em;margin:0 .1em}
+.cdx-row{flex-direction:column;align-items:center;gap:1rem}
+.cdx-tit{font-size:.75rem;margin:1rem 0 0;opacity:.9}
+</style>
+</head>
+<body>
+
+<main id="topo">
+<section class="hero">
+  <h1><span class="spray">Patrocine</span> <em>o Desafio X</em></h1>
+  <p class="pc-promo">Aproveite as cotas com <span class="neo50" data-t="50%">50%</span><br>de desconto no preço de lançamento</p>
+  <div class="cdx" id="cdx" data-fim="2026-12-31T23:59:59-03:00" role="timer" aria-live="off">
+    <div class="cdx-row">
+      <div class="cdx-u cdx-d"><div class="cdx-pl" data-k="d"></div><span>dias</span></div>
+      <div class="cdx-sm">
+        <div class="cdx-u"><div class="cdx-pl" data-k="h"></div><span>horas</span></div>
+        <div class="cdx-u"><div class="cdx-pl" data-k="m"></div><span>min</span></div>
+        <div class="cdx-u"><div class="cdx-pl" data-k="s"></div><span>seg</span></div>
+      </div>
+    </div>
+    <p class="cdx-tit">Os descontos de preço de lançamento terminam em 31/12/2026</p>
+    <p class="cdx-end" hidden>Encerrado</p>
+  </div>
+</section>
+
+<div class="ribbons" aria-hidden="true">
+  <div class="rib back"><div class="rib-track"></div></div>
+  <div class="rib front"><div class="rib-track"></div></div>
+</div>
+
+<section id="para-quem" class="sec">
+  <h2 class="graf">Para quem <b>é o patrocínio?</b></h2>
+  <p class="pc-lead">Para marcas, produtos e serviços de esporte, saúde e bem-estar.</p>
+  <ul class="pc-tags"><li>Suplementos</li><li>Fisioterapia</li><li>Nutrição</li><li>Educação física</li><li>Esportes em geral</li><li>Saúde</li><li>Bem-estar</li><li>Marcas e equipamentos</li></ul>
+</section>
+
+<div class="seam s2" aria-hidden="true"><span class="tp k c"></span><span class="tp f a"></span><span class="tp f b"></span></div>
+
+<div class="blk blk-green">
+<img class="brush" src="assets/pincel-verde-topo.webp" alt="" aria-hidden="true" width="2400" height="90">
+<div class="blk-in"><section id="aparece" class="sec">
+  <h2 class="graf">Como a sua marca <b>aparece</b></h2>
+  <div class="features ap-grid">
+    <div class="card"><h3>Profissionais de saúde e bem-estar</h3><p>Fisioterapia, nutrição e educação física: divulgação do profissional, da área de atuação e do endereço.</p></div>
+    <div class="card"><h3>Marcas e equipamentos</h3><p>Mostramos os produtos, a confecção, os equipamentos em uso nos treinos, testes dos produtos e o endereço da loja.</p></div>
+    <div class="card"><h3>Suplementos</h3><p>Mostramos os produtos e os testes feitos pelo pessoal do clube.</p></div>
+    <div class="card"><h3>Esportes em geral</h3><p>Mostramos a modalidade, as aulas e o local.</p></div>
+  </div>
+  <p class="ap-dest">Para todos: os produtos e serviços do patrocinador também podem virar prêmio das competições.</p>
+</section></div>
+<img class="brush bot" src="assets/pincel-verde-base.webp" alt="" aria-hidden="true" width="2400" height="90">
+</div>
+
+<div class="seam s3" aria-hidden="true"><span class="tp f a"></span><span class="tp f b"></span></div>
+
+<section id="desafios" class="sec">
+  <h2 class="graf">Como funcionam <b>os desafios</b></h2>
+  <div class="features rev">
+    <div class="card"><h3>Uma meta por dia</h3><p>Todo desafio é cumprir uma meta por dia. A duração é o tempo de divulgação: o desafio de 3 dias dá 3 dias de divulgação, e o de 7 dias dá 7 dias.</p></div>
+    <div class="card"><h3>Com o nome da sua marca</h3><p>O desafio de 3 ou 7 dias pode levar o nome do patrocinador (marca, serviço ou pessoa), e o competidor fala esse nome a cada post.</p></div>
+    <div class="card"><h3>Digital</h3><p>Aberto na internet: qualquer pessoa participa, de qualquer lugar.</p></div>
+    <div class="card"><h3>Regional</h3><p>Voltado para a região do patrocinador. A Desafio X faz um anúncio pago direcionado para a região e envia uma arte para você imprimir e colocar no seu espaço, atraindo o público local. Exemplo: uma academia incentiva os alunos a participar.</p></div>
+    <div class="card"><h3>Seguir os patrocinadores</h3><p>Uma das regras é seguir os patrocinadores, os únicos perfis que a Desafio X segue.</p></div>
+    <div class="card"><h3>Gratuito para participar</h3><p>Os desafios de 3 e 7 dias são gratuitos. Se o vencedor for assinante, leva o prêmio em dinheiro, os produtos ou serviços do patrocinador e a arte de vencedor em collab com ele, o patrocinador e a página da Desafio X. Se não for assinante, leva a arte de vencedor no mesmo collab.</p></div>
+  </div>
+</section>
+
+<div class="seam s7" aria-hidden="true"><span class="tp f a"></span><span class="tp f b"></span></div>
+
+<section id="cotas" class="sec" style="max-width:1400px;padding-top:4rem;padding-bottom:4rem">
+  <h2 class="graf">Cotas de <b>patrocínio</b></h2>
+  <p class="pc-lead">Todas as cotas estão com desconto de preço de lançamento: 50% de desconto, válido até 31 de dezembro de 2026.</p>
+  <div class="ct-grid rev">
+    <div class="ct ponto"><h3>Ponto de Partida</h3><p class="de">de R$100</p><p class="por">R$50</p><p class="tag">Preço de lançamento</p><p class="val">Pode ser contratado quantas vezes quiser no mês.</p>
+      <div class="lista"><h4>O patrocinador entrega</h4><ul><li>R$50 em dinheiro ou um cupom de valor equivalente</li></ul><h4>O patrocinador recebe</h4><ul><li>Entrada no grupo VIP de patrocinadores no Instagram, com dicas para melhorar a performance de vendas no digital</li><li>1 story de anúncio</li><li>1 desafio digital de 3 dias</li></ul></div>
+      <!-- Link provisório: será trocado pelo checkout Kiwify desta cota -->
+      <a class="btn cota" href="https://pay.kiwify.com.br/sLKMpeo" target="_blank" rel="noopener">Essa é minha cota</a></div>
+    <div class="ct bronze"><h3>Bronze</h3><p class="de">de R$400</p><p class="por">R$200</p><p class="tag">Preço de lançamento</p><p class="val">Vale por 1 mês.</p>
+      <div class="lista"><h4>O patrocinador entrega</h4><ul><li>R$200,00 + 3 produtos ou serviços</li></ul><h4>O patrocinador recebe</h4><ul><li>Entrada no grupo VIP de patrocinadores no Instagram, com dicas para melhorar a performance de vendas no digital</li><li>2 stories de anúncio (1 por semana, em 2 semanas do mês)</li><li>2 collabs na aba de Reels (1 por semana, em 2 semanas do mês)</li><li>1 desafio de 7 dias regional ou digital</li><li>Acesso total à área de membros do clube, para aprender e treinar, e a um módulo de gestão empresarial exclusivo para patrocinadores</li><li>1 inscrição para o desafio oficial de 15 dias (pode ser repassada para outra pessoa)</li></ul></div>
+      <!-- Link provisório: será trocado pelo checkout Kiwify desta cota -->
+      <a class="btn cota" href="https://pay.kiwify.com.br/h9g5ZjC" target="_blank" rel="noopener">Essa é minha cota</a></div>
+    <div class="ct prata"><h3>Prata</h3><p class="de">de R$1.000</p><p class="por">R$500</p><p class="tag">Preço de lançamento</p><p class="val">Vale por 1 mês.</p>
+      <div class="lista"><h4>O patrocinador entrega</h4><ul><li>R$500,00 + 4 produtos ou serviços</li></ul><h4>O patrocinador recebe</h4><ul><li>Entrada no grupo VIP de patrocinadores no Instagram, com dicas para melhorar a performance de vendas no digital</li><li>4 stories de anúncio (1 por semana)</li><li>4 collabs na aba de Reels (1 por semana)</li><li>1 desafio de 7 dias regional ou digital</li><li>Acesso total à área de membros do clube, para aprender e treinar, e a um módulo de gestão empresarial exclusivo para patrocinadores</li><li>1 inscrição para o desafio oficial de 15 dias (pode ser repassada para outra pessoa)</li></ul></div>
+      <!-- Link provisório: será trocado pelo checkout Kiwify desta cota -->
+      <a class="btn cota" href="https://pay.kiwify.com.br/m2JVdLn" target="_blank" rel="noopener">Essa é minha cota</a></div>
+    <div class="ct ouro"><h3>Ouro</h3><p class="de">de R$2.000</p><p class="por">R$1.000</p><p class="tag">Preço de lançamento</p><p class="val">Vale por 1 mês.</p>
+      <div class="lista"><h4>O patrocinador entrega</h4><ul><li>R$1.000,00 + 5 produtos ou serviços</li></ul><h4>O patrocinador recebe</h4><ul><li>Entrada no grupo VIP de patrocinadores no Instagram, com dicas para melhorar a performance de vendas no digital</li><li>8 stories de anúncio (2 por semana)</li><li>8 collabs na aba de Reels (2 por semana)</li><li>1 desafio de 7 dias regional ou digital</li><li>1 desafio digital de 3 dias</li><li>Acesso total à área de membros do clube, para aprender e treinar, e a um módulo de gestão empresarial exclusivo para patrocinadores</li><li>2 inscrições para o desafio oficial de 15 dias (podem ser repassadas para outras pessoas)</li></ul></div>
+      <!-- Link provisório: será trocado pelo checkout Kiwify desta cota -->
+      <a class="btn cota" href="https://pay.kiwify.com.br/lncEOeb" target="_blank" rel="noopener">Essa é minha cota</a></div>
+  </div>
+  <p class="ct-nota">Os stories e collabs são criados pelo patrocinador. A Desafio X não cria os anúncios, apenas compartilha.</p>
+  <p class="ct-adendo">Importante: o patrocinador pode encerrar o patrocínio a qualquer momento, basta parar de pagar a cota. Com isso, os serviços de divulgação são encerrados.</p>
+</section>
+
+<div class="seam s4" aria-hidden="true"><span class="tp k a"></span><span class="tp f a"></span></div>
+
+<section id="contato" class="sec">
+  <h2 class="graf">Vamos <b>conversar?</b></h2>
+  <p class="pc-lead">Quer fechar sua cota, tirar dúvidas ou tem outra proposta de patrocínio? Chama a gente no Direct do Instagram.</p>
+  <div class="pc-contato">
+    <a class="btn alt" href="https://instagram.com/desafiox.oficial" target="_blank" rel="noopener">Direct no Instagram</a>
+  </div>
+</section>
+
+</main>
+<div class="ribbons rod-rib" aria-hidden="true">
+  <div class="rib back"><div class="rib-track"></div></div>
+  <div class="rib front"><div class="rib-track"></div></div>
+</div>
+<footer class="rod">
+  <p class="rod-frase"><span class="rod-pincel">Não desista,</span> <em>alguém está se inspirando em você.</em></p>
+  <p class="rod-sub">Participe, se divirta e evolua com a gente.</p>
+  <div class="rod-marca"><img src="assets/favicon.png" alt="" width="48" height="48"><b>Desafio X</b></div>
+  <nav class="rod-links" aria-label="Links do rodapé">
+    <a href="index.html">Início</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="patrocinio.html">Patrocínio</a>
+    <a href="https://instagram.com/desafiox.oficial" target="_blank" rel="noopener">@desafiox.oficial</a>
+  </nav>
+  <p class="rod-copy">© 2026 Desafio X • Contato: <a href="mailto:odesafioxbr@gmail.com">odesafioxbr@gmail.com</a> • Instagram: <a href="https://www.instagram.com/desafiox.oficial/" target="_blank" rel="noopener">@desafiox.oficial</a></p>
+</footer>
+<script src="js/neon.js?v=95" defer></script>
+<script src="js/fitas.js?v=95" defer></script>
+<script src="js/contagem.js?v=96" defer></script>
+</body></html>
